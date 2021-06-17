@@ -12,10 +12,10 @@ int intvar;
 long longvar;
 long long llongvar;
 float floatvar;
-printf("Size of a char:%d byte(s)\n", sizeof(charvar));
-printf("Size of a int:%d byte(s)\n", sizeof(intvar));
-printf("Size of a long:%d byte(s)\n", sizeof(longvar));
-printf("Size of a long long:%d byte(s)\n", sizeof(llongvar));
-printf("Size of a float:%d byte(s)", sizeof(floatvar));
+printf("Size of a char: %d byte(s)\n", sizeof(charvar));
+printf("Size of a int: %d byte(s)\n", sizeof(intvar));
+printf("Size of a long: %d byte(s)\n", sizeof(longvar));
+printf("Size of a long long: %d byte(s)\n", sizeof(llongvar));
+printf("Size of a float: %d byte(s)", sizeof(floatvar));
 return (0);
 }
