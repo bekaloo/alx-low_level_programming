@@ -20,15 +20,17 @@ putchar(ones + '0');
 putchar(' ');
 putchar(tens + '0');
 putchar(ones1 + '0');
-if (ones1 < 9)
+if (tens + '0' == '9' && ones1 + '0' == '9' && ones + '0' == '8')
+{
+}
+else
 {
 putchar(',');
 putchar(' ');
 }
 
 }
-putchar(',');
-putchar(' ');
+
 }
 
 }
