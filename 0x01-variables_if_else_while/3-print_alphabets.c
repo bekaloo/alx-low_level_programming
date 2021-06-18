@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/* printing the alphabet */
+/**
+*main - printing alqhabets
+*Description: prints alphabets
+*Return: 0 if no error occured
+*/
 int main(void)
 {
 	char c;
@@ -9,7 +13,7 @@ int main(void)
 		putchar(c);
 	for (c = 'A'; c <= 'Z'; c++)
 		putchar(c);
-		putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
