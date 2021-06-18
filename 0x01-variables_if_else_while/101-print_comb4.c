@@ -15,11 +15,15 @@ for (ones = tens + 1; ones <= 9; ones++)
 putchar(hundreds + '0');
 putchar(tens + '0');
 putchar(ones + '0');
+if (hundreds * 100 + tens * 10 + ones < 789)
+{
 putchar(',');
 putchar(' ');
 }
 }
 }
+}
 putchar('\n');
+
 return (0);
 }
