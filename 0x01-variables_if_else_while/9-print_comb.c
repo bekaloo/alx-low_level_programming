@@ -7,18 +7,18 @@ nclude <stdio.h>
 */
 int main(void)
 {
-		int number;
+	int number;
 
-		for (number = 0; number <= 9; number++)
-		{
+	for (number = 0; number <= 9; number++)
+	{
 		putchar(number + '0');
 		if (number < 9)
 		{
-		putchar(',');
-		putchar(' ');
+			putchar(',');
+			putchar(' ');
 		}
-		}
-		putchar('\n');
+	}
+	putchar('\n');
 
 	return (0);
 }
