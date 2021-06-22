@@ -7,19 +7,18 @@
 */
 void print_to_98(int n)
 {
-int i;
-if (n >= 0 && n < 98)
+int i,j;
+if (n < 98)
 {
-for (i = 0; n + i <= 98; i++)
+for (j = 0; n + j <= 98; j++)
 {
-if (n + i < 10)
+if (n - j != 98)
 {
-_putchar(n + i + 48);
+printf("%d, ", n + j);
 }
 else
 {
-_putchar(n + i / 10 + 48);
-_putchar(n + i % 10 + 48);
+printf("%d\n", n + j);
 }
 }
 }
@@ -27,7 +26,14 @@ else if (n > 98)
 {
 for (i = 0; n - i >= 98; i++)
 {
-
+if (n - i != 98)
+{
+printf("%d, ", n - i);
+}
+else
+{
+printf("%d\n", n - i);
+}
 }
 }
 }
