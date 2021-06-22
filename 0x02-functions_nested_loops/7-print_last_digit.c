@@ -10,10 +10,10 @@ int print_last_digit(int last_digit)
 {
 if(last_digit>=0)
 {
-return (_putchar(last_digit % 10));
+return (last_digit % 10);
 }
 else
 {
-return (_putchar(-last_digit % 10));
+return (-last_digit % 10);
 }
 }
