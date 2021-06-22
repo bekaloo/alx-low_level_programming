@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include "_putchar.c"
+
 /**
 *main - starting point of execution
 *Description: executes the print_alphabet_x10 function
