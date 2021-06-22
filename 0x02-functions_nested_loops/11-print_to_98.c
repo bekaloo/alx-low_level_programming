@@ -12,7 +12,7 @@ if (n < 98)
 {
 for (j = 0; n + j <= 98; j++)
 {
-if (n - j != 98)
+if (n + j != 98)
 {
 printf("%d, ", n + j);
 }
@@ -22,7 +22,7 @@ printf("%d\n", n + j);
 }
 }
 }
-else if (n > 98)
+else if (n >= 98)
 {
 for (i = 0; n - i >= 98; i++)
 {
