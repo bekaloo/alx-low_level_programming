@@ -14,9 +14,16 @@ for (j = 0; j <= n; j++)
 p = i * j;
 if (p <= 9)
 {
-_putchar(' ');
-_putchar(' ');
+if (j == 0)
+{
 _putchar(p % 10 + 48);
+}
+else
+{
+_putchar(' ');
+_putchar(' ');
+_putchar(p % 10 + 48);    
+}
 }
 else if (p >= 10 && p < 100)
 {
