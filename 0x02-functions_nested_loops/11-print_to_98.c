@@ -12,14 +12,22 @@ if (n >= 0 && n < 98)
 {
 for (i = 0; n + i <= 98; i++)
 {
-return (n + i);
+if (n + i < 10)
+{
+_putchar(n + i + 48);
+}
+else
+{
+_putchar(n + i / 10 + 48);
+_putchar(n + i % 10 + 48);
+}
 }
 }
 else if (n > 98)
 {
 for (i = 0; n - i >= 98; i++)
 {
-return (n - i);
+
 }
 }
 }
