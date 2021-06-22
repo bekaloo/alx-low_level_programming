@@ -12,7 +12,14 @@ for (i = 0; i < 50; i++)
 prv = fib;
 fib += tmp;
 tmp = prv;
+if (i == 49)
+{
+printf("%ld", fib);
+}
+else
+{
 printf("%ld, ", fib);
+}
 }
 return (0);
 }
