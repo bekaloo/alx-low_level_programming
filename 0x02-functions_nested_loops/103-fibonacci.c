@@ -17,6 +17,6 @@ if (fib % 2 == 0)
 sum += fib;
 }
 }
-printf("%d\n", sum);
+printf("%ld\n", sum);
 return (0);
 }
