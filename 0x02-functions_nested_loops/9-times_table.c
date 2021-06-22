@@ -14,8 +14,15 @@ for (j = 0; j < 10; j++)
 {
 if (i * j < 10)
 {
+if (j == 0)
+{
+_putchar(i * j % 10 + 48);
+}
+else
+{
 _putchar(' ');
 _putchar(i * j % 10 + 48);
+}
 }
 else
 {
