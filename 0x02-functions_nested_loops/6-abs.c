@@ -1,19 +1,17 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
-*main -
-*Description:
-*Return:
+*_abs - absolute value
+*Description: returns absolute value
+*Return: p if p was positive, -p if it was negative
 */
-int main(void)
+int _abs(int p)
 {
-
-
-return (0);
+if (p >= 0)
+{
+return (p);
 }
-/**
-*
-*Description:
-*Return:
-*/
-
+else
+{
+return (-p);
+}
+}
