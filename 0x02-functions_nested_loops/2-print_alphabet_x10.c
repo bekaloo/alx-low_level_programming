@@ -1,16 +1,5 @@
 #include "holberton.h"
-
-/**
-*main - starting point of execution
-*Description: executes the print_alphabet_x10 function
-*Return: 0 if there are no errors
-*/
-int main(void)
-{
-
-print_alphabet_x10();
-return (0);
-}
+#include "_putchar.c"
 /**
 *print_alphabet_x10 - prints small letter alphabets 10 times
 */
