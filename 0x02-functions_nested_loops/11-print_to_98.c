@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include<stdio.h>
 /**
 * print_to_98 - prints to the specified number
 * @n: the argument that the func takes
