@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "_putchar.c"
 /**
 *_islower - Return false if letter is small and true if not
 *@c: is ascii value of a letter

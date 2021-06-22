@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include "_putchar.c"
 /**
 *_isalpha - checks if argument is alphabet
 *@c: the ascii value of a character
