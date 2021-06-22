@@ -14,7 +14,7 @@ fib += tmp;
 tmp = prv;
 if (i == 49)
 {
-printf("%ld", fib);
+printf("%ld\n", fib);
 }
 else
 {
