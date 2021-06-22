@@ -1,19 +1,12 @@
-#include "holberton.h"
-#include "_putchar.c"
+#include "holberton.h" 
 /**
-*main -
-*Description:
-*Return:
+* print_last_digit - function to print the last digit
+* @last_digit: is an argument of the print_last_digit function
+*Description: last digit ninja
+*Return: the last_digit
 */
-int main(void)
+
+int print_last_digit(int last_digit)
 {
-
-
-return (0);
+return _putchar(last_digit%10);
 }
-/**
-*
-*Description:
-*Return:
-*/
-

@@ -1,19 +1,12 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
-*main -
-*Description:
-*Return:
+*add - adds numbers
+*@a: first integer
+*@b: second integer
+*Description: takes two integers as arguments and returns their sum.
+*Return: sum of arguments
 */
-int main(void)
+int add(int a, int b)
 {
-
-
-return (0);
+return (a + b);
 }
-/**
-*
-*Description:
-*Return:
-*/
-
