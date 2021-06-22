@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
 *print_sign - prints the sign of a given int -
 *@n: argument to be checked if negative or not

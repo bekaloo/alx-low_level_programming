@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include "_putchar.c"
 /**
 *print_alphabet_x10 - prints small letter alphabets 10 times
 */
