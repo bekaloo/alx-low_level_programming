@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-long long int i, fib = 1, prv = 0, tmp = 0;
+long int i, fib = 1, prv = 0, tmp = 0;
 for (i = 0; i < 50; i++)
 {
 prv = fib;
