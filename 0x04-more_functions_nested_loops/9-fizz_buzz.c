@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 /**
 * main - executes
@@ -35,7 +34,7 @@ printf("Buzz ");
 }
 else
 {
-    printf("%d ", i);
+printf("%d ", i);
 }
 }
 }
