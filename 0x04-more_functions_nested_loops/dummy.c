@@ -1,39 +1,24 @@
 #include <stdio.h>
 
+void print_triangle(int size)
+{
+int i, j, k;
+for (i = 0; i < size; i++)
+{
+for (j = 1; j < size - i; j++)
+{
+printf(" ");
+}
+for (k = 0; k <= i; k++)
+{
+printf("#");
+}
+printf("\n");
+}
+}
 
 
 int main(){
-    int i = 1;
-for (; i <= 100; i++)
-{
-if (i % 3 == 0 && i % 5 == 0)
-{
-printf("FizzBuzz ");
-}
-else
-{
-if(i % 3 == 0)
-{
-printf("Fizz ");
-}
-else if (i % 5 == 0)
-{
-if(i == 100)
-{
-printf("Buzz");
-}
-else
-{
-printf("Buzz ");
-}
-
-}
-else
-{
-    printf("%d ", i);
-}
-}
-}
-printf("\n");
+    print_triangle(5);
     return 0;
 }
