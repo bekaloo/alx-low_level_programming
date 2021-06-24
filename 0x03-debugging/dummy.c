@@ -1,10 +1,28 @@
 #include <stdio.h>
+
+
+int largest_number(int a, int b, int c)
+{
+int largest;
+
+if (a >= b && a >= c)
+{
+largest = a;
+}
+else if (b >= a && b >= c)
+{
+largest = b;
+}
+else
+{
+largest = c;
+}
+
+return (largest);
+}
+
+
 int main(){
-    int i;
-    //while(i<100)
-    {
-printf("while block");
-    }
-    printf("loop skipped");
+    printf("%d\n",largest_number(10,10, 10));
     return (0);
 }
