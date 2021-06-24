@@ -3,3 +3,6 @@ a.out
 *.html
 file_creator
 _putchar.c
+d.c
+lq.c
+jeremyfib.c
