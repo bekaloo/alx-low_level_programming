@@ -1,27 +1,39 @@
 #include <stdio.h>
 
-void print_square(int size)
+
+
+int main(){
+    int i = 1;
+for (; i <= 100; i++)
 {
-int i;
-int j;
-if (size <= 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
-putchar('\n');
+printf("FizzBuzz ");
 }
 else
 {
-for (i = 0; i < size; i++)
+if(i % 3 == 0)
 {
-for (j = 0; j < size; j++)
+printf("Fizz ");
+}
+else if (i % 5 == 0)
 {
-putchar('#');
+if(i == 100)
+{
+printf("Buzz");
 }
-putchar('\n');
-}
-}
+else
+{
+printf("Buzz ");
 }
 
-int main(){
-    print_square(5);
+}
+else
+{
+    printf("%d ", i);
+}
+}
+}
+printf("\n");
     return 0;
 }
