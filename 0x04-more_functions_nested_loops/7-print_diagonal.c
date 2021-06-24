@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
-*print_diagonal - prints spades diagonally
-*@n: how many lines
-*Description:
-*Return:
+*print_diagonal - prints backward slashes diagonally
+*@n: how long the line is
+*Description: Diagonal line printer
+*Return: nothing
 */
 void print_diagonal(int n)
 {
