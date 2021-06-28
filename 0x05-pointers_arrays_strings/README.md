@@ -1,0 +1,1 @@
+This is the section of my alx software engineering track where I learn about pointers.
