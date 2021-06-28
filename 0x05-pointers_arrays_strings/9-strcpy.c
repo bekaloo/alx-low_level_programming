@@ -9,13 +9,23 @@
 
 char *_strcpy(char *dest, char *src)
 {
-int i = 0;
+int i = 0, j;
 dest = src;
 
 while (src[i])
 {
 i++;
 }
-dest[i] = '\0';
+for (j = 0; j <= i; j++)
+{
+if (j < i)
+{
+dest[j] = src[j];
+}
+else
+{
+dest[j] = '\0';
+}
+}
 return (dest);
 }
