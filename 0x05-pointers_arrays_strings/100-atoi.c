@@ -26,7 +26,7 @@ return (neg);
 */
 int _atoi(char *s)
 {
-int i = 0, j, k, tmp, conv = 0, c = 0, sc = 0, l, neg = 0;
+int i = 0, j, k, tmp, conv = 0, c = 0, sc = 0, neg = 0;
 while (s[i])
 {
 if (s[i] >= 48 && s[i] <= 57)
