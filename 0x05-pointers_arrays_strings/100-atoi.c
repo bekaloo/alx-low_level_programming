@@ -12,7 +12,6 @@ while (s[i])
 {
 if (s[i] >= 48 && s[i] <= 57)
 {
-continue;
 }
 else
 {
