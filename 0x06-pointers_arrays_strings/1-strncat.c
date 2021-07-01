@@ -8,6 +8,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 int i = 0, j = 0, scntr = 0, cntr;
+char *cnctd = "";
 while (src[i])
 {
 i++;
@@ -16,7 +17,7 @@ while (dest[j])
 {
 j++;
 }
-char cnctd[i + j];
+
 for (cntr = 0; cntr < i + j; cntr++)
 {
 if (cntr < j)
