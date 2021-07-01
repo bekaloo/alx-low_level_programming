@@ -9,28 +9,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-int i = 0, j = 0, scntr = 0, cntr;
+int i = 0, j = 0;
 while (src[i])
 {
 i++;
 }
-while (dest[j])
+while (src[j] != '\0')
 {
+dest[i] = src[j];
+i++;
 j++;
 }
-char cnctd[i + j];
-for (cntr = 0; cntr < i + j; cntr++)
-{
-if (cntr < j)
-{
-cnctd[cntr] = dest[cntr];
-}
-else
-{
-cnctd[cntr] = src[scntr];
-scntr++;
-}
-}
-dest = cnctd;
+dest[i] = '\0';
 return (dest);
 }
