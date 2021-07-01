@@ -8,12 +8,13 @@
 char *cap_string(char *c)
 {
 int i = 0;
+
+while (c[i])
+{
 if (c[i] >= 97 && c[i] <= 122)
 {
 c[i] = 'A' + (c[i + 1] - 97);
 }
-while (c[i])
-{
 switch (c[i])
 {
 case ',':
