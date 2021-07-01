@@ -7,32 +7,21 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-int i = 0, j = 0, scntr = 0, cntr;
-char *cnctd = "";
-while (src[i])
-{
-i++;
-}
-while (dest[j])
-{
-j++;
-}
+	int i;
+	int j;
 
-for (cntr = 0; cntr < i + j; cntr++)
-{
-if (cntr < j)
-{
-cnctd[cntr] = dest[cntr];
-}
-else
-{
-if (cntr < n)
-{
-cnctd[cntr] = src[scntr];
-scntr++;
-}
-}
-}
-dest = cnctd;
-return (dest);
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
