@@ -33,4 +33,5 @@ scntr++;
 }
 }
 dest = cnctd;
+return (dest);
 }
