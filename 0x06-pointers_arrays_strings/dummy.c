@@ -2,7 +2,7 @@
 
 char *_strcat(char *dest, char *src)
 {
-int i = 0, j = 0, dcntr, scntr = 0, cntr;
+int i = 0, j = 0, scntr = 0, cntr;
 while (src[i]) {
 i++;
 }

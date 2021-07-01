@@ -1,28 +1,30 @@
 #include <stdio.h>
 
-
-int largest_number(int a, int b, int c)
+int main(void)
 {
-int largest;
+        int i;
 
-if (a >= b && a >= c)
-{
-largest = a;
-}
-else if (b >= a && b >= c)
-{
-largest = b;
-}
-else
-{
-largest = c;
-}
+        printf("Before loop\n");
 
-return (largest);
-}
+        for (i = 0; i < 100; i++)
+        {
+                if (i % 2 != 0)
+                {
+                        printf("i is not even so don't print\n");
+                        continue;
+                }
+                else
+                {
+                        printf("i is even, break to print\n");
+                        break;
+                }
 
+                printf("Outside of if/else, still inside for loop\n");
 
-int main(){
-    printf("%d\n",largest_number(10,10, 10));
-    return (0);
+                printf("%d\n", i);
+        }
+
+        printf("For loop exited\n");
+
+        return(0);
 }
