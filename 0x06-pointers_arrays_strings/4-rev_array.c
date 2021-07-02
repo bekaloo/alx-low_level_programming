@@ -1,20 +1,20 @@
 #include "holberton.h"
 /**
-* reverse_array - integer array reverser
-* @a: the array to be reversed
-* @n: the number of elements the array contains
-*Description:
-*Return:
-*/
-
+ * reverse_array - reverse array of integers
+ * @a: array
+ * @n: number of elements of array
+ *
+ * Return: void
+ */
 void reverse_array(int *a, int n)
 {
-int cnt, tmp, rcnt = n - 1;
-for (cnt = 0; cnt < n / 2; cnt++)
-{
-tmp = a[cnt];
-a[cnt] = a[rcnt];
-a[rcnt] = tmp;
-rcnt--;
-}
+	int i;
+	int temp;
+
+	for (i = 0; i < n--; i++)
+	{
+		temp = a[i];
+		a[i] = a[n];
+		a[n] = temp;
+	}
 }
