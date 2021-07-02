@@ -1,33 +1,21 @@
 #include<stdio.h>
 
-char *_strcat(char *dest, char *src, int n)
+void print_number(int n)
 {
-	int i;
-	int j;
-
-	i = 0;
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	j = 0;
-	while (j < n && src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
-	return (dest);
+int dig = 1, i;
+while (n / dig >= 1)
+{
+dig *= 10;
 }
-
-
+while (n > 0) {
+putchar('0' + (n % dig));
+dig /= 10;
+}
+}
 
 int main(){
     
-    char* a = _strcat("coder"," network",5);
-    
-    printf("%s",a);
+    print_number(6575);
     
     return 0;
 }
