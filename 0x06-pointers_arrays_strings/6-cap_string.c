@@ -1,41 +1,42 @@
 #include "holberton.h"
 /**
-* cap_string - capitalizes words
-* @c: the string to be
-*Description:
-*Return: capitalized version of the parameter string
-*/
-char *cap_string(char *c)
+ * cap_string - capitalizes all words of a string
+ * @n: input value
+ *
+ *
+ * Return: string
+ */
+char *cap_string(char *n)
 {
-int i = 0;
-if (c[i] >= 97 && c[i] <= 122)
-{
-c[i] = 'A' + (c[i] - 97);
-}
-while (c[i])
-{
+	int i;
 
-switch (c[i])
-{
-case ',':
-case ';':
-case '.':
-case '!':
-case '?':
-case '"':
-case '(':
-case ')':
-case '{':
-case '}':
-case ' ':
-case '\n':
-case '\t':
-if (c[i + 1] >= 97 && c[i + 1] <= 122)
-{
-c[i + 1] = 'A' + (c[i + 1] - 97);
-}
-}
-i++;
-}
-return (c);
+	i = 0;
+	if (n[0] >= 'a' && n[0] <= 'z')
+	{
+		n[0] = n[0] - 32;
+	}
+	for (i = 0; n[i] != '\0'; i++)
+	{
+		switch (n[i])
+		{
+			case ',':
+			case ';':
+			case '.':
+			case '!':
+			case '?':
+			case '"':
+			case '(':
+			case ')':
+			case '{':
+			case '}':
+			case ' ':
+			case '\n':
+			case '\t':
+				if (n[i + 1] > 96 && n[i + 1] < 123)
+				{
+					n[i + 1] = n[i + 1] - 32;
+				}
+		}
+	}
+	return (n);
 }
