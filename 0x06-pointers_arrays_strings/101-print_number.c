@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
-*
+* print_number - prints numbers
+* @n: integer to be printed
 *Description:
-*Return:
+*Return: nothing
 */
-//
 void print_number(int n)
 {
 unsigned int copy, nth, size = 1, ones = n % 10;
