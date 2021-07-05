@@ -12,7 +12,6 @@ char *_strpbrk(char *s, char *accept)
 int slen = 0, alen = 0;
 int j;
 int k;
-char *p;
 while (s[slen])
 {
 slen++;
@@ -28,10 +27,10 @@ for (k = 0; k < alen; k++)
 if (s[j] == accept[k])
 {
 
-p = &s[j];
+return (&s[j]);
 break;
 }
 }
 }
-return (p);
+return (0);
 }
