@@ -1,24 +1,24 @@
 #include <stdio.h>
 
 
-void _puts_recursion(char *s)
+int _strlen_recursion(char *s)
 {
-if (*s == '\0')
+int i = 0;
+if (*s != '\0')
 {
-putchar('\n');
-}
-else 
-{putchar(*s);
+_strlen_recursion(s);
 s++;
-_puts_recursion(s);
+i++;
 }
+return (i);
 }
-
 
 
 int main(void){
 
-    _puts_recursion("Bekalu");
+     int n;
 
-    return 0;
+    n = _strlen_recursion("Corbin Coleman");
+    printf("%d\n", n);
+    return (0);
 }
