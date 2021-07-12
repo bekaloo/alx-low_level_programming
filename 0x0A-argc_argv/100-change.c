@@ -37,6 +37,7 @@ if (x == 1)
 {
 c += x;
 }
+printf("%d\n", c);
 }
 else if (argc != 2)
 {
@@ -48,6 +49,5 @@ else
 printf("0\n");
 return (0);
 }
-printf("%d\n", c);
 return (0);
 }
