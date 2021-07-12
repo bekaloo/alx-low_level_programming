@@ -8,7 +8,7 @@
 *Description:
 *Return: 0
 */
-int main(int __attribute__((__unused__)) argc, char __attribute__((__unused__)) *argv[])
+int main(int argc, char *argv[])
 {
 if (argv[1] && argv[2] && argc == 3)
 {
