@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-*main - main
+* main - main
+* @argc: command count/size of argv
+* @argv: array of commands
 *Description:
 *Return: 0
 */
 int main(int argc, char *argv[])
 {
-int c = 0;
-
 if (argv[1] && argc == 2)
 {
-int x = atoi(argv[1]);
+int c = 0, x = atoi(argv[1]);
 if (x >= 25)
 {
 c += x / 25;

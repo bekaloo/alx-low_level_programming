@@ -10,7 +10,7 @@
 */
 int main(int __attribute__((__unused__)) argc, char __attribute__((__unused__)) *argv[])
 {
-if (argv[1] && argv[2])
+if (argv[1] && argv[2] && argc == 3)
 {
 printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 }
