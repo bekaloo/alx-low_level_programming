@@ -49,6 +49,7 @@ while (j2 < size2)
 {
 s[j] = s2[j2];
 j2++;
+j++;
 }
 break;
 }
