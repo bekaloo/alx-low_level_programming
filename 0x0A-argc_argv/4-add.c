@@ -2,11 +2,10 @@
 #include <stdlib.h>
 /**
 * nochar - main
-* @s: command count/size of argv
+* @s: array of chars => string
 *Description:
-*Return: 0
+*Return: 0 if it has no letters || 1 if it has
 */
-
 int nochar(char *s)
 {
 if (*s < 48 || *s > 57)
@@ -28,12 +27,12 @@ return (nochar(s));
 }
 /**
 * adder - main
-* @c: command count/size of argv
-* @cnt: array of commands
-* @sum: command count/size of argv
-* @limit: array of commands
+* @c: array of strings
+* @cnt: counter
+* @sum: sum
+* @limit: array size...argc
 *Description:
-*Return: 0
+*Return: nothing
 */
 void adder(char *c[], int cnt, int *sum, int limit)
 {
