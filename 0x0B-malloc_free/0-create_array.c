@@ -15,10 +15,17 @@ if (size == 0)
 {
 return (NULL);
 }
+if (str)
+{
 while (i < size)
 {
 str[i] = c;
 i++;
 }
 return (str);
+}
+else
+{
+return (NULL);
+}
 }
