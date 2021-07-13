@@ -36,7 +36,7 @@ int size1 = length(s1);
 char *s = (char *) malloc(size + 1);
 if (s != NULL)
 {
-while (s[j])
+while (j < size + 1)
 {
 if (j < size1)
 {
