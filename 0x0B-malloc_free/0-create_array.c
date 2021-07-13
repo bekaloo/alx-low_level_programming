@@ -9,7 +9,12 @@
 */
 char *create_array(unsigned int size, char c)
 {
-char *str = malloc(size);
-str[0] = c;
+int i = 0;
+char *str = (void *) malloc(size);
+while (str[i])
+{
+str[i] = c;
+i++;
+}
 return (str);
 }
