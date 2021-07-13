@@ -1,15 +1,15 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
-* create_array
+* create_array - array creator
 * @size: size of the array
 * @c: initial character
 *Description:
-*Return:
+*Return: string
 */
 char *create_array(unsigned int size, char c)
 {
-char *str = (void*) malloc(size);
+char *str = malloc(size);
 str[0] = c;
 return (str);
 }
