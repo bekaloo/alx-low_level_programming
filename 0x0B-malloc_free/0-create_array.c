@@ -10,8 +10,8 @@
 char *create_array(unsigned int size, char c)
 {
 int i = 0;
-char *str = malloc(size);
-while (str[i])
+char *str = malloc(size * sizeof(char));
+while (i < size)
 {
 str[i] = c;
 i++;
