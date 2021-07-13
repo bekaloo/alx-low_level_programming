@@ -15,7 +15,7 @@ if (size == 0)
 {
 return (NULL);
 }
-if (str)
+if (sizeof(str) == size)
 {
 while (i < size)
 {
