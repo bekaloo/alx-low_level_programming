@@ -45,7 +45,7 @@ s[j] = s1[j];
 else
 {
 j2 = 0;
-while (j < size2)
+while (j2 < size2)
 {
 s[j] = s2[j2];
 j2++;
