@@ -8,12 +8,13 @@
 */
 char *_strdup(char *str)
 {
-int i = 0, j = 0;
-while (str[i])
+int *i = 0, j = 0;
+char *s = (char *) malloc(*i);
+while (str[*i])
 {
 i++;
 }
-char *s = (char *) malloc(i);
+
 while (str[j])
 {
 s[j] = str[j];
