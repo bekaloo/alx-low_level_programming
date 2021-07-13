@@ -32,8 +32,8 @@ return (0);
 char *str_concat(char *s1, char *s2)
 {
 int j = 0, size = length(s1) + length(s2);
-int size1 = length(s1);
-char *s = (char *) malloc(size);
+int size1 = length(s1), j2;
+char *s = (char *) malloc(size + 1);
 if (s != NULL)
 {
 while (j < size)
@@ -41,10 +41,11 @@ while (j < size)
 if (j < size1)
 {
 s[j] = s1[j];
+j2 = j + 1;
 }
 else
 {
-s[j] = s2[j];
+s[j] = s2[j - j2];
 }
 j++;
 }
