@@ -33,10 +33,10 @@ char *str_concat(char *s1, char *s2)
 {
 int j = 0, size = length(s1) + length(s2);
 int size1 = length(s1);
-char *s = (char *) malloc(size + 1);
+char *s = (char *) malloc(size);
 if (s != NULL)
 {
-while (j < size + 1)
+while (j < size)
 {
 if (j < size1)
 {
