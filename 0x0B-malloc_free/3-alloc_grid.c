@@ -13,6 +13,7 @@ int i, j;
 int **arr = (int **) malloc(sizeof(int *) * height);
 if (height <= 0 || width <= 0)
 {
+free (arr);
 return (NULL);
 }
 else
@@ -24,6 +25,7 @@ for (i = 0; i < height; i++)
 arr[i] = (int *) malloc(sizeof(int) * width);
 if (arr[i] == NULL)
 {
+free (arr);
 return (NULL);
 }
 }
@@ -38,6 +40,7 @@ return (arr);
 }
 else
 {
+free (arr);
 return (NULL);
 }
 }
