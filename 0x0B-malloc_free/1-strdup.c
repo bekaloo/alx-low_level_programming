@@ -8,12 +8,19 @@
 */
 int length(char *str)
 {
+if (str != NULL)
+{
 int j = 0;
 while (str[j])
 {
 j++;
 }
 return (j);
+}
+else
+{
+return (0);
+}
 }
 /**
 * _strdup - string dupilicator
