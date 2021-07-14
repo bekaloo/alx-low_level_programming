@@ -52,7 +52,7 @@ if (ac != 0 && av != NULL)
 {
 for (i = 0; i < ac; i++)
 {
-len += length(av[i] + 1);
+len += length(av[i]) + 1;
 }
 str = (char *) malloc(len);
 if (str == NULL)
