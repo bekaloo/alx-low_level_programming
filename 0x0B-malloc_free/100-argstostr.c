@@ -46,9 +46,10 @@ free(arr);
 */
 char *argstostr(int ac, char **av)
 {
-int len = 1, i, j, tl = 0;
+unsigned int len = 1;
+int i, j, tl = 0;
 char *str;
-if (ac != 0 && av != NULL)
+if (ac != 1 && av != NULL)
 {
 for (i = 0; i < ac; i++)
 {
@@ -74,7 +75,6 @@ return (str);
 }
 else
 {
-freemem(av, ac);
 return (NULL);
 }
 }
