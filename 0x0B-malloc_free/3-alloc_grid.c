@@ -13,6 +13,7 @@ int j;
 for (j = 0; j < height; j++)
 {
 free(arr[j]);
+free(arr);
 }
 }
 /**
