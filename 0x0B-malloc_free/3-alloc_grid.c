@@ -28,18 +28,21 @@ int **alloc_grid(int width, int height)
 {
 int i, j;
 int **arr = (int **) malloc(sizeof(int *) * height);
-if (height <= 0 || width <= 0)
+if (height <= 0 || width <= 0 || arr == NULL)
 {
 freemem(arr,  height);
 return (NULL);
 }
 else
 {
-if (arr != NULL)
-{
 for (i = 0; i < height; i++)
 {
 arr[i] = (int *) malloc(sizeof(int) * width);
+if (arr[i] == NULL)
+{
+freemem(arr,  height);
+return (NULL);
+}
 }
 for (i = 0; i < height; i++)
 {
@@ -49,11 +52,6 @@ arr[i][j] = 0;
 }
 }
 return (arr);
-}
-else
-{
-freemem(arr,  height);
-return (NULL);
-}
+
 }
 }
