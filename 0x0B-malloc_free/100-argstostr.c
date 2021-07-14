@@ -46,8 +46,7 @@ free(arr);
 */
 char *argstostr(int ac, char **av)
 {
-unsigned int len = 1;
-int i, j, tl = 0;
+int len = 1, i, j, tl = 0;
 char *str;
 if (ac != 0 && av != NULL)
 {
@@ -75,6 +74,7 @@ return (str);
 }
 else
 {
+
 return (NULL);
 }
 }
