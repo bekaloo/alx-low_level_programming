@@ -49,7 +49,7 @@ char *argstostr(int ac, char **av)
 unsigned int len = 1;
 int i, j, tl = 0;
 char *str;
-if (ac != 1 && av != NULL)
+if (ac != 0 && av != NULL)
 {
 for (i = 0; i < ac; i++)
 {
