@@ -40,11 +40,6 @@ if (arr != NULL)
 for (i = 0; i < height; i++)
 {
 arr[i] = (int *) malloc(sizeof(int) * width);
-if (arr[i] == NULL)
-{
-freemem(arr,  height);
-return (NULL);
-}
 }
 for (i = 0; i < height; i++)
 {
