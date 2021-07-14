@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 /**
 * alloc_grid - allocates a multidimensional array
 * @width: width of the matrix/array
@@ -13,7 +14,8 @@ int i, j;
 int **arr = (int **) malloc(sizeof(int *) * height);
 if (height <= 0 || width <= 0)
 {
-free (arr);
+free(arr);
+arr = NULL;
 return (NULL);
 }
 else
@@ -25,7 +27,8 @@ for (i = 0; i < height; i++)
 arr[i] = (int *) malloc(sizeof(int) * width);
 if (arr[i] == NULL)
 {
-free (arr);
+free(arr);
+arr = NULL;
 return (NULL);
 }
 }
@@ -40,7 +43,8 @@ return (arr);
 }
 else
 {
-free (arr);
+free(arr);
+arr = NULL;
 return (NULL);
 }
 }
