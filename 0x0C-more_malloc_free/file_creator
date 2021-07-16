@@ -1,0 +1,8 @@
+#!/bin/bash
+grep File: $1 | sed -e 's/<li>File: <code>//g'| sed -e 's/<\/code><\/li>//g'|sed -e 's/ //g'| sed -e 's/^/touch /'  > creator ; chmod +x creator ; ./creator && rm creator && chmod +x *;
+
+echo -e "#include \"holberton.h\"\n/**\n*\n*Description:\n*Return:\n*/\n" | tee *.c > /dev/null;
+
+grep Prototype: $1 | sed -e 's/<li>Prototype: <code>//g'| sed -e 's/<\/code><\/li>//g' | cat > holberton.h
+
+echo "This is where the docs is supposed to be" > README.md
