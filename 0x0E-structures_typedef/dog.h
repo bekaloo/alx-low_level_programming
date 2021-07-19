@@ -6,5 +6,4 @@ char *name;
 float age;
 char *owner;
 };
-typedef dog dog;
 #endif
