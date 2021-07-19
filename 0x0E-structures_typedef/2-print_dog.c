@@ -1,10 +1,10 @@
-#include "holberton.h"
 #include "dog.h"
 #include <stdio.h>
 /**
-*
+* print_dog - print dog info
+*@d: dog
 *Description:
-*Return:
+*Return: nothing
 */
 void print_dog(struct dog *d)
 {
