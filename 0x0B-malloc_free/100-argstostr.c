@@ -74,7 +74,6 @@ return (str);
 }
 else
 {
-
 return (NULL);
 }
 }

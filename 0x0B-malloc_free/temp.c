@@ -1,61 +1,39 @@
 #include "holberton.h"
+#include "100-argstostr.c"
 #include <stdlib.h>
-char *create_array(unsigned int size, char c)
-{
-int i = 0;
-char *str = (char *) malloc(size);
-while (i < size)
-{
-str[i] = c;
-i++;
-}
-return (str);
-}
 
-/**
- * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
- *
- * Return: Nothing.
- */
-void simple_print_buffer(char *buffer, unsigned int size)
-{
-    unsigned int i;
 
-    i = 0;
-    while (i < size)
+int main(int ac, char *av[])
+{
+    char *s;
+
+    s = argstostr(ac, av);
+    if (s == NULL)
     {
-        if (i % 10)
-        {
-            printf(" ");
-        }
-        if (!(i % 10) && i)
-        {
-            printf("\n");
-        }
-        printf("0x%02x", buffer[i]);
-        i++;
-    }
-    printf("\n");
-}
-
-/**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char *buffer;
-
-    buffer = create_array(98, 'H');
-    if  (buffer == NULL)
-    {
-        printf("failed to allocate memory\n");
         return (1);
     }
-    simple_print_buffer(buffer, 98);
-    free(buffer);
+    printf("%s", s);
+    free(s);
     return (0);
+}
+
+char *argstostr(int ac, char **av)
+{
+	int len = 0, i, j;
+	char *str = NULL, *str_tmp = NULL;
+
+	if (!ac || av == NULL)
+		return (NULL);
+	for (i = 0; i < ac; i++, ++len)
+		for (j = 0; av[i][j]; j++)
+			++len;
+
+	str = malloc(sizeof(char) * (len + 1)), str_tmp = str;
+	if (str == NULL)
+		return (NULL);
+	for (i = 0; i < ac; i++, (*str++ = '\n'))
+		for (j = 0; av[i][j]; j++)
+			*str++ = av[i][j];
+	*str = '\0';
+	return (str_tmp);
 }
