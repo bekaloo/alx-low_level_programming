@@ -1,5 +1,11 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE dog.h
+/**
+*struct dog - dog info
+*@name: name
+*@age: age
+*@owner: owner
+*/
 struct dog
 {
 char *name;
