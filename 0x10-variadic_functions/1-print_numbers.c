@@ -8,7 +8,6 @@
 *Description:
 *Return: nothing
 */
-
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 unsigned int count = n;
@@ -16,7 +15,14 @@ va_list x;
 va_start(x, n);
 while (count)
 {
-printf("%d%c", *separator, va_arg(x, int));
+if (count > 1)
+{
+printf("%d%c", va_arg(x, int), *separator);
+}
+else
+{
+printf("%d\n", va_arg(x, int));
+}
 count--;
 }
 }
