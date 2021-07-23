@@ -17,7 +17,7 @@ while (count)
 {
 if (count > 1)
 {
-printf("%d%c", va_arg(x, int), *separator);
+printf("%d%s", va_arg(x, int), separator);
 }
 else
 {
