@@ -1,17 +1,19 @@
 #include "lists.h"
 #include <stddef.h>
+#include <stdio.h>
 /**
-*
+* print_list - prints a linked list
+* @h: linked list
 *Description:
-*Return:
+*Return: number of strings
 */
 
 size_t print_list(const list_t *h)
 {
-size_t i=0;
+size_t i = 0;
 while (h)
 {
-printf("%s", h->str);
+printf("[%d] %s\n", h->len, h->str);
 h = h->next;
 i++;
 }
