@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-//#include "lists.h"
 #include "0-print_list.c"
 /**
  * main - check the code for ALX School students.
