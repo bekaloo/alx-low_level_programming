@@ -1,10 +1,12 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 /**
-*
+*read_textfile - file reader
+*@filename: file name to be read
+*@letters: number of letters
 *Description:
-*Return:
+*Return: 1 if success 0 if fail
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
