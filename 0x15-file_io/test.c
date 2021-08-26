@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "holberton.h"
 #include "0-read_textfile.c"
 /**
  * main - check the code for ALX School students.
