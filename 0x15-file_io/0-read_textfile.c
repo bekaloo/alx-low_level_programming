@@ -1,38 +1,43 @@
 #include <stdio.h>
-#include "main.h"
+#include "holberton.h"
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
 /**
-*read_textfile - file reader
-*@filename: file name to be read
-*@letters: number of letters
-*Description:
-*Return: 1 if success 0 if fail
-*/
-
+ * read_textfile - Reads a text file and prints it to the POSIX
+ * standard output.
+ * @filename: file.
+ * @letters: Number of letters it should read and print.
+ * Return: Actual number of letters it could read and print.
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
+	int fd, res_read, res_write;
+	char *buf;
 
-int fr, fw, bytes, chars = 0;
-char c;
-fr = open(filename, O_RDONLY);
-fw = open(filename, O_WRONLY | O_CREAT | S_IRUSR, S_IWUSR);
-if (filename == NULL)
-{
-return (0);
-}
-else
-{
-while ((bytes = read(fr, &c, sizeof(c))) > 0)
-{
-write(1, &c, 1);
-chars++;
-}
-close(fr);
-close(fw);
-return (chars);
-}
+	if (filename == NULL)
+		return (0);
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+		return (0);
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
+		return (0);
+	res_read = read(fd, buf, letters);
+	if (res_read == -1)
+	{
+		free(buf);
+		return (0);
+	}
+	res_write = write(STDOUT_FILENO, buf, res_read);
+	if (res_write == -1 || res_read != res_write)
+	{
+		free(buf);
+		return (0);
+	}
+	free(buf);
+	close(fd);
+	return (res_write);
 }
