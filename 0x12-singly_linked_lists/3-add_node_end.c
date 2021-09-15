@@ -16,7 +16,7 @@ if (newnode == NULL || (dup == NULL && str != NULL))
 {
 return (free(dup), free(newnode), NULL);
 }
-newnode->str = dup, newnode->len = dup == NULL ? : str_len(dup);
+newnode->str = dup, newnode->len = dup == NULL ? 0 : str_len(dup);
 newnode->next = NULL;
 
 if (*head == NULL)
