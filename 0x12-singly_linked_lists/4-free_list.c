@@ -7,18 +7,12 @@
 */
 void free_list(list_t *head)
 {
-list_t *temp = head;
-while (head->next != NULL)
+list_t *temp;
+for (; head != NULL; head = temp)
 {
 temp = head->next;
 free(head->str);
 free(head);
-head = temp;
 }
-if (head->str != NULL)
-{
-free(head->str);
-}
-free(temp);
 }
 
