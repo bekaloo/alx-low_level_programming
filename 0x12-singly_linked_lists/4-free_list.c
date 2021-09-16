@@ -15,7 +15,10 @@ free(head->str);
 free(head);
 head = temp;
 }
+if (head->str != NULL)
+{
 free(head->str);
+}
 free(temp);
 }
 
