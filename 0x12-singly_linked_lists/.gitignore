@@ -1,2 +1,5 @@
 *.out 
- temp.c 
+ temp.c
+ dummy.c
+ main.c
+
